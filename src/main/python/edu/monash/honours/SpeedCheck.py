@@ -20,7 +20,7 @@ def close_spark(ssc):
 
 
 def check_speed(speed):
-    if speed > SPEED_UPPER_LIMIT or speed < SPEED_LOWER_LIMIT:
+    if float(speed) > SPEED_UPPER_LIMIT or float(speed) < SPEED_LOWER_LIMIT:
         return speed, False
     else:
         return speed, True
